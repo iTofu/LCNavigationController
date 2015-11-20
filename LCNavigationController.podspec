@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LCNavigationController"
-  s.version      = "1.0.1"
+  s.version      = "1.0.0"
   s.summary      = "The most popular NavigationController except UINavigationController. Support: http://www.leodong.com"
   s.homepage     = "https://github.com/LeoiOS/LCNavigationController"
   # s.license      = "MIT"

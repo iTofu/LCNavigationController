@@ -50,7 +50,11 @@ typedef enum : NSUInteger {
     
     CGRect bounds = [UIScreen mainScreen].bounds;
     
-    if (UIInterfaceOrientationIsLandscape(orientation)) {
+    if ([[UIApplication sharedApplication]isStatusBarHidden]) {
+        
+        return bounds;
+        
+    } else if (UIInterfaceOrientationIsLandscape(orientation)) {
         
         CGFloat width = bounds.size.width;
         bounds.size.width = bounds.size.height;
@@ -134,10 +138,10 @@ typedef enum : NSUInteger {
     CGFloat offset = 0;
     
     UIViewController *vc = [self currentViewController];
-    vc.view.layer.shadowColor = [UIColor blackColor].CGColor;
-    vc.view.layer.shadowOpacity = 0.6;
-    vc.view.layer.shadowRadius = 5;
     offset = CGRectGetWidth(vc.view.frame) - x;
+    vc.view.layer.shadowColor = [UIColor blackColor].CGColor;
+    vc.view.layer.shadowOpacity = 0.6f;
+    vc.view.layer.shadowRadius = 5;
     
     self.percentageOffsetFromLeft = offset / [self viewBoundsWithOrientation:self.interfaceOrientation].size.width;
     vc.view.frame = [self getSlidingRectWithPercentageOffset:self.percentageOffsetFromLeft orientation:self.interfaceOrientation];
@@ -337,6 +341,10 @@ typedef enum : NSUInteger {
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     
     return (toInterfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void) willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    
 }
 
 @end

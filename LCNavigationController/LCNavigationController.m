@@ -11,6 +11,8 @@
 static const CGFloat LCAnimationDuration = 0.50f;   // Push / Pop 动画持续时间
 static const CGFloat LCMaxBlackMaskAlpha = 0.80f;   // 黑色背景透明度
 static const CGFloat LCZoomRatio         = 0.90f;   // 后面视图缩放比
+static const CGFloat LCShadowOpacity     = 0.70f;   // 滑动返回时当前视图的阴影透明度
+static const CGFloat LCShadowRadius      = 5.00f;   // 滑动返回时当前视图的阴影半径
 
 typedef enum : NSUInteger {
     PanDirectionNone,
@@ -139,9 +141,9 @@ typedef enum : NSUInteger {
     
     UIViewController *vc = [self currentViewController];
     offset = CGRectGetWidth(vc.view.frame) - x;
-    vc.view.layer.shadowColor = [UIColor blackColor].CGColor;
-    vc.view.layer.shadowOpacity = 0.6f;
-    vc.view.layer.shadowRadius = 5;
+    vc.view.layer.shadowColor   = [UIColor blackColor].CGColor;
+    vc.view.layer.shadowOpacity = LCShadowOpacity;
+    vc.view.layer.shadowRadius  = LCShadowRadius;
     
     self.percentageOffsetFromLeft = offset / [self viewBoundsWithOrientation:self.interfaceOrientation].size.width;
     vc.view.frame = [self getSlidingRectWithPercentageOffset:self.percentageOffsetFromLeft orientation:self.interfaceOrientation];

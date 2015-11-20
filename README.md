@@ -2,11 +2,12 @@
 除 UINavigationController 外最流行的 NavigationController！
 
 ![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.gif)
+===
 ![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.png)
 
-  
+  ````
   心有猛虎，细嗅蔷薇。
-  
+  ````
 
 
 ## 前言 Foreword
@@ -29,6 +30,7 @@
         [self.window makeKeyAndVisible];
         
         UIViewController *mainVC = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
+        
         LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:mainVC];
         
         self.window.rootViewController = navC;

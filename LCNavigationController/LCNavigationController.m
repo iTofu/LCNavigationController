@@ -11,8 +11,8 @@
 static const CGFloat LCAnimationDuration = 0.50f;   // Push / Pop 动画持续时间
 static const CGFloat LCMaxBlackMaskAlpha = 0.80f;   // 黑色背景透明度
 static const CGFloat LCZoomRatio         = 0.90f;   // 后面视图缩放比
-static const CGFloat LCShadowOpacity     = 0.70f;   // 滑动返回时当前视图的阴影透明度
-static const CGFloat LCShadowRadius      = 5.00f;   // 滑动返回时当前视图的阴影半径
+static const CGFloat LCShadowOpacity     = 0.80f;   // 滑动返回时当前视图的阴影透明度
+static const CGFloat LCShadowRadius      = 6.00f;   // 滑动返回时当前视图的阴影半径
 
 typedef enum : NSUInteger {
     PanDirectionNone,
@@ -234,6 +234,11 @@ typedef enum : NSUInteger {
     
     self.animationing = YES;
     
+    
+    viewController.view.layer.shadowColor   = [UIColor blackColor].CGColor;
+    viewController.view.layer.shadowOpacity = LCShadowOpacity;
+    viewController.view.layer.shadowRadius  = LCShadowRadius;
+    
     viewController.view.frame = CGRectOffset(self.view.bounds, self.view.bounds.size.width, 0);
     viewController.view.autoresizingMask =  UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     self.blackMask.alpha = 0;
@@ -280,6 +285,10 @@ typedef enum : NSUInteger {
     UIViewController *currentVC = [self currentViewController];
     UIViewController *previousVC = [self previousViewController];
     [previousVC viewWillAppear:NO];
+    
+    currentVC.view.layer.shadowColor   = [UIColor blackColor].CGColor;
+    currentVC.view.layer.shadowOpacity = LCShadowOpacity;
+    currentVC.view.layer.shadowRadius  = LCShadowRadius;
     
     [UIView animateWithDuration:LCAnimationDuration delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         

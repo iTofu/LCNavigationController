@@ -13,7 +13,7 @@ static const CGFloat LCAnimationDuration = 0.50f;   // Push / Pop 动画持续�
 static const CGFloat LCMaxBlackMaskAlpha = 0.80f;   // 黑色背景透明度
 static const CGFloat LCZoomRatio         = 0.90f;   // 后面视图缩放比
 static const CGFloat LCShadowOpacity     = 0.80f;   // 滑动返回时当前视图的阴影透明度
-static const CGFloat LCShadowRadius      = 6.00f;   // 滑动返回时当前视图的阴影半径
+static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
 
 typedef enum : NSUInteger {
     PanDirectionNone,

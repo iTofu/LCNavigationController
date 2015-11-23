@@ -60,7 +60,7 @@
     
     static const CGFloat LCShadowOpacity     = 0.80f;   // 滑动返回时当前视图的阴影透明度
     
-    static const CGFloat LCShadowRadius      = 6.00f;   // 滑动返回时当前视图的阴影半径
+    static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
     ````
 * 搞定！
 

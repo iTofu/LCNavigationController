@@ -18,6 +18,8 @@
 
 ## 代码 Code
 
+> 当成`UINavigationController`来用就行！方法都一样！
+
 * 
     - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
     - 方法二：导入`LCNavigationController`文件夹到你的项目中 (文件夹在 Demo 中可以找到)

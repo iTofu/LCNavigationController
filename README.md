@@ -14,6 +14,19 @@
 
 
 
+### 思路如下
+
+项目结构如图：
+![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/tree.png)
+
+1. 根视图控制器是`LCNavigationController`的实例。
+2. `LCNavigationController`的实例的`rootViewController`是`UITabBarController`的实例。
+3. 然后`UITabBarController`的实例的`viewController`是不同的控制器，也即各个标签页。
+
+控制器层级顺序如图：
+
+
+
 ## 代码 Code
 
 #### 请参考 demo，或仔细阅读以下步骤！
@@ -45,8 +58,6 @@
         return YES;
     }
     ````
-> 项目结构如图：
-> ![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/tree.png)
 * 在你需要用到的地方`#import "LCNavigationController.h"`，然后：
     ````objc
     // 1. Push

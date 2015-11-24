@@ -16,6 +16,8 @@
 
 
 #### 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支。
+** 效果图： **
+![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/LCNCTabbarDemo.gif)
 
 ## 代码 Code
 

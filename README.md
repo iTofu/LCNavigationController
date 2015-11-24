@@ -1,9 +1,7 @@
 # LCNavigationController
 除 UINavigationController 外最流行的 NavigationController！
 
-![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.gif)
-===
-![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.png)
+![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/LCNCTabbarDemo.gif)
 
   ````
   心有猛虎，细嗅蔷薇。
@@ -18,7 +16,7 @@
 
 ## 代码 Code
 
-> 当成`UINavigationController`来用就行！方法都一样！
+#### 请参考 demo，或仔细阅读以下步骤！
 
 * 
     - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
@@ -27,13 +25,20 @@
 
     ````objc
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-        
+    
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         [self.window makeKeyAndVisible];
         
         UIViewController *mainVC = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
+        mainVC.tabBarItem.title = @"首页";
         
-        LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:mainVC];
+        UIViewController *avc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AVC"];
+        avc.tabBarItem.title = @"发现";
+        
+        UITabBarController *tabbar = [[UITabBarController alloc] init];
+        tabbar.viewControllers = @[mainVC, avc];
+        
+        LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:tabbar];
         
         self.window.rootViewController = navC;
         

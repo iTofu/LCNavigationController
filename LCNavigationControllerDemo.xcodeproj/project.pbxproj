@@ -16,6 +16,8 @@
 		B34AADDF1BFF161100E9BC3A /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B34AADDE1BFF161100E9BC3A /* OneVC.m */; };
 		B34AADE21BFF161800E9BC3A /* TwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B34AADE11BFF161800E9BC3A /* TwoVC.m */; };
 		B34AADE81BFF25FC00E9BC3A /* ThreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B34AADE71BFF25FC00E9BC3A /* ThreeVC.m */; };
+		B36E6FF41C041E30004F72B9 /* AVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B36E6FF31C041E30004F72B9 /* AVC.m */; };
+		B36E6FF71C041E39004F72B9 /* BVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B36E6FF61C041E39004F72B9 /* BVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		B34AADE11BFF161800E9BC3A /* TwoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoVC.m; sourceTree = "<group>"; };
 		B34AADE61BFF25FB00E9BC3A /* ThreeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeVC.h; sourceTree = "<group>"; };
 		B34AADE71BFF25FC00E9BC3A /* ThreeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeVC.m; sourceTree = "<group>"; };
+		B36E6FF21C041E30004F72B9 /* AVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVC.h; sourceTree = "<group>"; };
+		B36E6FF31C041E30004F72B9 /* AVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVC.m; sourceTree = "<group>"; };
+		B36E6FF51C041E39004F72B9 /* BVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BVC.h; sourceTree = "<group>"; };
+		B36E6FF61C041E39004F72B9 /* BVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 				B34AADE11BFF161800E9BC3A /* TwoVC.m */,
 				B34AADE61BFF25FB00E9BC3A /* ThreeVC.h */,
 				B34AADE71BFF25FC00E9BC3A /* ThreeVC.m */,
+				B36E6FF21C041E30004F72B9 /* AVC.h */,
+				B36E6FF31C041E30004F72B9 /* AVC.m */,
+				B36E6FF51C041E39004F72B9 /* BVC.h */,
+				B36E6FF61C041E39004F72B9 /* BVC.m */,
 				B34AADCE1BFF062E00E9BC3A /* Assets.xcassets */,
 				B34AADD01BFF062E00E9BC3A /* LaunchScreen.storyboard */,
 				B34AADD31BFF062E00E9BC3A /* Info.plist */,
@@ -174,6 +184,8 @@
 			files = (
 				B34AADDF1BFF161100E9BC3A /* OneVC.m in Sources */,
 				B34AADC71BFF062E00E9BC3A /* AppDelegate.m in Sources */,
+				B36E6FF41C041E30004F72B9 /* AVC.m in Sources */,
+				B36E6FF71C041E39004F72B9 /* BVC.m in Sources */,
 				B34AADE21BFF161800E9BC3A /* TwoVC.m in Sources */,
 				B34AADE81BFF25FC00E9BC3A /* ThreeVC.m in Sources */,
 				B34AADDC1BFF064800E9BC3A /* LCNavigationController.m in Sources */,

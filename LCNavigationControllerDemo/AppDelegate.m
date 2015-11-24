@@ -22,7 +22,15 @@
     [self.window makeKeyAndVisible];
     
     UIViewController *mainVC = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
-    LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:mainVC];
+    mainVC.tabBarItem.title = @"首页";
+    
+    UIViewController *avc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"AVC"];
+    avc.tabBarItem.title = @"发现";
+    
+    UITabBarController *tabbar = [[UITabBarController alloc] init];
+    tabbar.viewControllers = @[mainVC, avc];
+    
+    LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:tabbar];
     
     self.window.rootViewController = navC;
     

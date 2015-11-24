@@ -18,6 +18,7 @@
 - (IBAction)pushBtnClicked {
     
     UIViewController *childVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TwoVC"];
+    childVC.hidesBottomBarWhenPushed = YES;
     [self.lcNavigationController pushViewController:childVC];
 }
 

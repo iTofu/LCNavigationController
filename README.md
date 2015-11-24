@@ -70,7 +70,7 @@
 
 
 ## 更新日志 2015.11.24 Update Logs (Tag: 1.0.2 branch: tabbar)
-* 提供配合`UITabBarController`使用的 Demo。
+* 提供配合`UITabBarController`使用的 Demo，详见 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支。
 
 
 

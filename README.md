@@ -15,6 +15,7 @@
 效果参考 App：腾讯新闻、百度音乐等等
 
 
+#### 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支。
 
 ## 代码 Code
 
@@ -65,6 +66,11 @@
     static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
     ````
 * 搞定！
+
+
+
+## 更新日志 2015.11.24 Update Logs (Tag: 1.0.2 branch: tabbar)
+* 提供配合`UITabBarController`使用的 Demo。
 
 
 

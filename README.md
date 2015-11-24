@@ -14,22 +14,20 @@
 
 
 
-### 思路如下
+## 怎么配合使用`UITabBarController`？
 
 项目结构如图：
 ![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/tree.png)
 
-1. 根视图控制器是`LCNavigationController`的实例。
+1. 项目的根视图控制器是`LCNavigationController`的实例。
 2. `LCNavigationController`的实例的`rootViewController`是`UITabBarController`的实例。
-3. 然后`UITabBarController`的实例的`viewController`是不同的控制器，也即各个标签页。
-
-控制器层级顺序如图：
-
+3. `UITabBarController`的实例的`viewController`是各个不同的控制器，也即各个标签页。
+4. 导航栏：`LCNavigationController`并没有导航栏，你可以选择在`LCNavigationController`和`viewController`中再加一层`UINavigationController` (仅使用其导航栏)，也可以像 Demo 中那样，自定义一个导航栏 (继承自`UIView`，在上面放控件)。
 
 
 ## 代码 Code
 
-#### 请参考 demo，或仔细阅读以下步骤！
+#### 请参考 Demo，或仔细阅读以下步骤！
 
 * 
     - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
@@ -83,6 +81,11 @@
     static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
     ````
 * 搞定！
+
+
+
+## 更新日志 2015.11.24 Update Logs (Tag: 1.0.2 branch: tabbar)
+* 提供配合`UITabBarController`使用的 Demo。
 
 
 

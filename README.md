@@ -45,6 +45,8 @@
         return YES;
     }
     ````
+> 项目结构如图：
+> ![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/tree.png)
 * 在你需要用到的地方`#import "LCNavigationController.h"`，然后：
     ````objc
     // 1. Push

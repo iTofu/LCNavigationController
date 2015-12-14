@@ -9,6 +9,8 @@
   心有猛虎，细嗅蔷薇。
   ````
 
+欢迎访问 **我的博客**：http://LeoDev.me
+
 
 ## 前言 Foreword
 
@@ -30,23 +32,23 @@
 >
 > 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支！
 
-* 
+*
     - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
     - 方法二：导入`LCNavigationController`文件夹到你的项目中 (文件夹在 Demo 中可以找到)
 * 在`AppDelegate.m`中，`#import "LCNavigationController.h"`，参考如下代码：
 
     ````objc
     - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-        
+
         self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
         [self.window makeKeyAndVisible];
-        
+
         UIViewController *mainVC = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
-        
+
         LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:mainVC];
-        
+
         self.window.rootViewController = navC;
-        
+
         return YES;
     }
     ````
@@ -55,23 +57,23 @@
     // 1. Push
     UIViewController *childVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TwoVC"];
     [self.lcNavigationController pushViewController:childVC];
-    
+
     // 2. Pop
     [self.lcNavigationController popViewController];
-    
+
     // 3. Pop to rootViewController
     [self.lcNavigationController popToRootViewController];
     ````
 * 可自定义的参数(在`LCNavigationController.m`中)：
     ````objc
     static const CGFloat LCAnimationDuration = 0.50f;   // Push / Pop 动画持续时间
-    
+
     static const CGFloat LCMaxBlackMaskAlpha = 0.80f;   // 黑色背景透明度
-    
+
     static const CGFloat LCZoomRatio         = 0.90f;   // 后面视图缩放比
-    
+
     static const CGFloat LCShadowOpacity     = 0.80f;   // 滑动返回时当前视图的阴影透明度
-    
+
     static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
     ````
 * 搞定！

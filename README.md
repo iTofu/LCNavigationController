@@ -32,7 +32,7 @@
 >
 > 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支！
 
-*
+* 
     - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
     - 方法二：导入`LCNavigationController`文件夹到你的项目中 (文件夹在 Demo 中可以找到)
 * 在`AppDelegate.m`中，`#import "LCNavigationController.h"`，参考如下代码：

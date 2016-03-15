@@ -1,4 +1,11 @@
 # LCNavigationController
+
+[![Travis](https://img.shields.io/travis/LeoiOS/LCNavigationController.svg?style=flat)](https://travis-ci.org/LeoiOS/LCNavigationController)
+[![CocoaPods](https://img.shields.io/cocoapods/v/LCNavigationController.svg)](http://cocoadocs.org/docsets/LCNavigationController)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCNavigationController.svg)](https://raw.githubusercontent.com/LeoiOS/LCNavigationController/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/p/LCNavigationController.svg)](http://cocoadocs.org/docsets/LCNavigationController)
+[![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
+
 除 UINavigationController 外最流行的 NavigationController！
 
 ![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.gif)

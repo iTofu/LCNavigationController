@@ -9,12 +9,14 @@
 除 UINavigationController 外最流行的 NavigationController！
 
 ![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.gif)
-===
+---
 ![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.png)
 
-  ````
-  心有猛虎，细嗅蔷薇。
-  ````
+````
+In me the tiger sniffs the rose.
+
+心有猛虎，细嗅蔷薇。
+````
 
 欢迎访问 **我的博客**：http://LeoDev.me
 
@@ -39,74 +41,84 @@
 >
 > 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支！
 
-* 
-    - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
-    - 方法二：导入`LCNavigationController`文件夹到你的项目中 (文件夹在 Demo 中可以找到)
+* 两种导入方法：
+  - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
+  - 方法二：导入`LCNavigationController`文件夹到你的项目中 (文件夹在 Demo 中可以找到)
+
 * 在`AppDelegate.m`中，`#import "LCNavigationController.h"`，参考如下代码：
 
-    ````objc
-    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  ````objc
+  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        [self.window makeKeyAndVisible];
+      self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+      [self.window makeKeyAndVisible];
 
-        UIViewController *mainVC = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
+      UIViewController *mainVC = [UIStoryboard storyboardWithName:@"Main" bundle:nil].instantiateInitialViewController;
 
-        LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:mainVC];
+      LCNavigationController *navC = [[LCNavigationController alloc] initWithRootViewController:mainVC];
 
-        self.window.rootViewController = navC;
+      self.window.rootViewController = navC;
 
-        return YES;
-    }
-    ````
+      return YES;
+  }
+  ````
+
 * 在你需要用到的地方`#import "LCNavigationController.h"`，然后：
-    ````objc
-    // 1. Push
-    UIViewController *childVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TwoVC"];
-    [self.lcNavigationController pushViewController:childVC];
 
-    // 2. Pop
-    [self.lcNavigationController popViewController];
+  ````objc
+  // 1. Push
+  UIViewController *childVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"TwoVC"];
+  [self.lcNavigationController pushViewController:childVC];
 
-    // 3. Pop to rootViewController
-    [self.lcNavigationController popToRootViewController];
-    ````
+  // 2. Pop
+  [self.lcNavigationController popViewController];
+
+  // 3. Pop to rootViewController
+  [self.lcNavigationController popToRootViewController];
+  ````
+
 * 可自定义的参数(在`LCNavigationController.m`中)：
-    ````objc
-    static const CGFloat LCAnimationDuration = 0.50f;   // Push / Pop 动画持续时间
 
-    static const CGFloat LCMaxBlackMaskAlpha = 0.80f;   // 黑色背景透明度
+  ````objc
+  static const CGFloat LCAnimationDuration = 0.50f;   // Push / Pop 动画持续时间
 
-    static const CGFloat LCZoomRatio         = 0.90f;   // 后面视图缩放比
+  static const CGFloat LCMaxBlackMaskAlpha = 0.80f;   // 黑色背景透明度
 
-    static const CGFloat LCShadowOpacity     = 0.80f;   // 滑动返回时当前视图的阴影透明度
+  static const CGFloat LCZoomRatio         = 0.90f;   // 后面视图缩放比
 
-    static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
-    ````
+  static const CGFloat LCShadowOpacity     = 0.80f;   // 滑动返回时当前视图的阴影透明度
+
+  static const CGFloat LCShadowRadius      = 8.00f;   // 滑动返回时当前视图的阴影半径
+  ````
+
 * 搞定！
 
 
+## 更新日志 Update Logs
 
-## 更新日志 2015.11.24 Update Logs (Tag: 1.0.2 branch: tabbar)
+### V 1.0.5 2016.04.01
+
+* 更新 CocoaPods 源。
+
+
+### V 1.0.2 2015.11.24
+
 * 提供配合`UITabBarController`使用的 Demo，详见 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支。
 
-
-
-## 更新日志 2015.11.23 Update Logs (Tag: 1.0.2)
 * 更新自定义参数。
 
 
+### V 1.0.0 2015.11.20
 
-## 更新日志 2015.11.20 Update Logs (Tag: 1.0.0)
 * 初始化提交。
 
 
 
 ## 联系 Support
 
-* 发现问题请 Issues 我，谢谢:-)
-* Email: leoios@sina.com
-* Blog: http://www.leodong.com
+* 发现问题请 Issue，谢谢:-)
+* Mail: devtip@163.com
+* Blog: http://LeoDev.me
 
 
 

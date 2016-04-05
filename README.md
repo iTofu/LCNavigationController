@@ -1,16 +1,16 @@
 # LCNavigationController
 
-[![Travis](https://img.shields.io/travis/LeoiOS/LCNavigationController.svg?style=flat)](https://travis-ci.org/LeoiOS/LCNavigationController)
+[![Travis](https://img.shields.io/travis/iTofu/LCNavigationController.svg?style=flat)](https://travis-ci.org/iTofu/LCNavigationController)
 [![CocoaPods](https://img.shields.io/cocoapods/v/LCNavigationController.svg)](http://cocoadocs.org/docsets/LCNavigationController)
-[![CocoaPods](https://img.shields.io/cocoapods/l/LCNavigationController.svg)](https://raw.githubusercontent.com/LeoiOS/LCNavigationController/master/LICENSE)
+[![CocoaPods](https://img.shields.io/cocoapods/l/LCNavigationController.svg)](https://raw.githubusercontent.com/iTofu/LCNavigationController/master/LICENSE)
 [![CocoaPods](https://img.shields.io/cocoapods/p/LCNavigationController.svg)](http://cocoadocs.org/docsets/LCNavigationController)
 [![LeoDev](https://img.shields.io/badge/blog-LeoDev.me-brightgreen.svg)](http://leodev.me)
 
 除 UINavigationController 外最流行的 NavigationController！
 
-![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.gif)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCNavigationController/master/LCNCDemo.gif)
 ---
-![image](https://github.com/LeoiOS/LCNavigationController/blob/master/LCNCDemo.png)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCNavigationController/master/LCNCDemo.png)
 
 ````
 In me the tiger sniffs the rose.
@@ -27,11 +27,11 @@ In me the tiger sniffs the rose.
 
 
 
-#### 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支！
+#### 配合`UITabBarController`使用请参考 [tabbar](https://github.com/iTofu/LCNavigationController/tree/tabbar) 分支！
 
 **效果图：**
 
-![image](https://github.com/LeoiOS/LCNavigationController/blob/tabbar/LCNCTabbarDemo.gif)
+![by http://LeoDev.me](https://raw.githubusercontent.com/iTofu/LCNavigationController/tabbar/LCNCTabbarDemo.gif)
 
 
 
@@ -39,7 +39,7 @@ In me the tiger sniffs the rose.
 
 > 当成`UINavigationController`来用就行！方法都一样！
 >
-> 配合`UITabBarController`使用请参考 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支！
+> 配合`UITabBarController`使用请参考 [tabbar](https://github.com/iTofu/LCNavigationController/tree/tabbar) 分支！
 
 * 两种导入方法：
   - 方法一：[CocoaPods](https://cocoapods.org/) 导入：`pod 'LCNavigationController'`
@@ -96,14 +96,14 @@ In me the tiger sniffs the rose.
 
 ## 更新日志 Update Logs
 
-### V 1.0.5 2016.04.01
+### V 1.0.6 2016.04.05
 
 * 更新 CocoaPods 源。
 
 
 ### V 1.0.2 2015.11.24
 
-* 提供配合`UITabBarController`使用的 Demo，详见 [tabbar](https://github.com/LeoiOS/LCNavigationController/tree/tabbar) 分支。
+* 提供配合`UITabBarController`使用的 Demo，详见 [tabbar](https://github.com/iTofu/LCNavigationController/tree/tabbar) 分支。
 
 * 更新自定义参数。
 

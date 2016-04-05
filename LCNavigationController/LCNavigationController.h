@@ -5,20 +5,20 @@
 //  Created by Leo on 15/11/20.
 //  Copyright © 2015年 Leo. All rights reserved.
 //
-//  V 1.0.2
+//  V 1.0.6
 
 #import <UIKit/UIKit.h>
 
+
 typedef void (^LCNavigationControllerCompletionBlock)(void);
+
 
 @interface LCNavigationController : UIViewController
 
 @property(nonatomic, strong) NSMutableArray *viewControllers;
 
 
-
 - (instancetype)initWithRootViewController:(UIViewController *)rootViewController;
-
 
 
 - (void)pushViewController:(UIViewController *)viewController;
@@ -27,11 +27,9 @@ typedef void (^LCNavigationControllerCompletionBlock)(void);
                 completion:(LCNavigationControllerCompletionBlock)completion;
 
 
-
 - (void)popViewController;
 
 - (void)popViewControllerCompletion:(LCNavigationControllerCompletionBlock)completion;
-
 
 
 - (void)popToRootViewController;

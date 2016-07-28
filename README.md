@@ -25,6 +25,8 @@ In me the tiger sniffs the rose.
 
 效果参考 App：腾讯新闻、百度音乐等等
 
+⚠️ 项目目前存在一些不足，表现在 viewController 层级相对较多时出现一些卡顿，我会抽空重新思考换一套实现方式，此前不建议集成到大型项目中！
+
 
 
 #### 配合`UITabBarController`使用请参考 [tabbar](https://github.com/iTofu/LCNavigationController/tree/tabbar) 分支！
